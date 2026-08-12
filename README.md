@@ -1,41 +1,145 @@
-# E-Commerce Store
+# 🛒 E-Commerce Website
 
-A corporate-style e-commerce frontend built with React and JavaScript.
+A modern **E-Commerce web application** built using **React.js**.
+This project is focused on building a real-world shopping experience while practicing React concepts such as components, props, state management, hooks, routing, API integration, and reusable UI components.
 
-## 🎫 ECOM-003 — Configure Application Routing
+## 🚀 Features
 
-### Objective
+* 🏠 Home page
+* 🛍️ Product listing
+* 🔍 Product search
+* 🏷️ Product categories
+* 📦 Product details
+* 🛒 Add to cart
+* ➕ Increase/decrease product quantity
+* ❌ Remove products from cart
+* 💰 Cart total calculation
+* ❤️ Product wishlist
+* 📱 Responsive design
+* ⚡ Dynamic UI using React
+* 🔄 API integration
+* 🧭 Client-side routing
 
-Configure React Router for client-side navigation across the application.
+## 🛠️ Tech Stack
 
-### Routes
+### Frontend
 
-| Route | Page |
-|---|---|
-| `/` | Home |
-| `/products` | Products |
-| `/products/:id` | Product Details |
-| `/cart` | Cart |
-| `/checkout` | Checkout |
-| `/success` | Order Success |
-| `*` | 404 Not Found |
+* React.js
+* JavaScript
+* HTML5
+* CSS3
 
-### React Router Concepts
+### Libraries & Tools
 
-- BrowserRouter
-- Routes
-- Route
-- Dynamic Routes
-- Catch-all Routes
+* React Router
+* Fetch API / Axios
+* Vite
+* Git & GitHub
 
-### Acceptance Criteria
+## 📂 Project Structure
 
-- React Router configured
-- All required routes render correctly
-- Dynamic product route implemented
-- Unknown routes display a 404 page
-- Client-side navigation works
+```text
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   ├── Footer.jsx
+│   └── ...
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetails.jsx
+│   ├── Cart.jsx
+│   └── ...
+│
+├── hooks/
+│
+├── context/
+│
+├── assets/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-### Status
+## ⚙️ Installation
 
-✅ Completed
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Navigate to the project:
+
+```bash
+cd YOUR_PROJECT_NAME
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local development URL provided by Vite.
+
+## 🧠 React Concepts Practiced
+
+This project is being developed to strengthen practical React skills, including:
+
+* Components
+* Props
+* State
+* `useState`
+* `useEffect`
+* `useRef`
+* Conditional rendering
+* Lists and keys
+* Event handling
+* Forms
+* React Router
+* API calls
+* Context API
+* Custom hooks
+* Component reusability
+* State management
+* CRUD operations
+
+## 📌 Future Improvements
+
+* [ ] User authentication
+* [ ] Login & registration
+* [ ] Backend integration
+* [ ] Database integration
+* [ ] Payment gateway
+* [ ] Order management
+* [ ] User profile
+* [ ] Product reviews & ratings
+* [ ] Admin dashboard
+* [ ] Product filtering & sorting
+* [ ] Pagination
+* [ ] Dark mode
+
+## 🎯 Project Goal
+
+The goal of this project is to build a **production-style E-Commerce application** while improving my understanding of React and modern frontend development.
+
+## 👨‍💻 Author
+
+**Sumedh Shambharkar**
+
+BCA Student | React Developer | AI/ML Enthusiast
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
