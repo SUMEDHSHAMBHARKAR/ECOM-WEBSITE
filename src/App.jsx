@@ -5,29 +5,34 @@ import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import Success from "./pages/Success";
 import ProductDetails from "./pages/ProductDetails";
+import MainLayout from "./layouts/MainLayout";
 
 
 const router = createBrowserRouter([
   {
-    path : "/", element:<Home/>
+    path : "/", element: <MainLayout />, children :[
+  {
+    index: true, element:<Home/>
   },
   {
-    path:"/products", element: <Products/>
+    path:"products", element: <Products/>
   },
   {
-    path:"/products/:id", element: <ProductDetails/>
+    path:"products/:id", element: <ProductDetails/>
   },
   {
-    path :"/cart", element: <Cart/>
+    path :"cart", element: <Cart/>
   },
   {
-    path :"/checkout", element: <Checkout/>
+    path :"checkout", element: <Checkout/>
   },
   {
-    path :"/success", element: <Success/>
+    path :"success", element: <Success/>
   },
   {
     path:"*", element: <div>404 page not found</div>
+  } 
+    ]
   }
 ])
 
