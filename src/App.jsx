@@ -9,6 +9,7 @@ import ProductDetails from "./pages/ProductDetails";
 import MainLayout from "./layouts/MainLayout";
 import Orders from "./pages/Orders";
 import OrderDetails from "./pages/OrderDetails";
+import NotFound from "./pages/NotFound";
 
 
 const router = createBrowserRouter([
@@ -42,11 +43,13 @@ const router = createBrowserRouter([
     path : "orders/:orderId" , element: <OrderDetails/>
   },
   {
-    path:"*", element: <div>404 page not found</div>
+    path:"*", element: <NotFound />
   } 
     ]
   },
-])
+], {
+  basename: import.meta.env.BASE_URL
+})
 
 
 function App() {
