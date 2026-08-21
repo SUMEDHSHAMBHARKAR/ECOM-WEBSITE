@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 function NavBar() {
+  const {cartItems} = useCart();
+  const cartCount = cartItems.reduce(
+    (total , item) => total + item.quantity , 0
+  )
   return (
     <>
       <li>
@@ -23,7 +28,14 @@ function NavBar() {
           className={({ isActive }) => (isActive ? "active-link" : "")}
         >
           {" "}
-          Cart
+          Cart({cartCount})
+        </NavLink>
+        <NavLink
+          to="/orders"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          {" "}
+          Orders
         </NavLink>
       </li>
     </>
